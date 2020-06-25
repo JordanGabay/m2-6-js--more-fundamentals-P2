@@ -8,7 +8,12 @@ const foodPairings = {
   strawberries: 'cream',
 };
 
-const getValue = () => {
+const getValue = (anObj, key) => {
+  if(Object.keys(anObj).includes(key)) {
+    return anObj[key];
+  } else {
+    return 'not available';
+  }
   // do something
 };
 

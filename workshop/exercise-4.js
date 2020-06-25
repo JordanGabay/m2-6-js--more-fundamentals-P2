@@ -8,7 +8,8 @@ let foodPairings = {
   strawberries: 'cream',
 };
 
-const converter = (obj) => {
+const converter = (anObj) => {
+  return [Object.keys(anObj), Object.values(anObj)];
   // do something
 };
 

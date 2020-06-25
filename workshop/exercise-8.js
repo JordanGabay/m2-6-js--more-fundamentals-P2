@@ -48,3 +48,11 @@ const staffMembers = [
     },
   },
 ];
+
+const findData = (arr) => {
+  return arr.filter(function (obj) {
+    return obj.skillLevels.javascript > 5;
+  });
+};
+
+console.log(findData(staffMembers));
